@@ -1,0 +1,95 @@
+@charset "tis-620";
+
+@font-face {
+	font-family: "retro";
+    src: url("retro.eot");
+    src:	url("retro.eot?#iefix") format("embedded-opentype"),
+			url("retro.woff2") format("woff2"),
+			url("retro.woff") format("woff"),
+			url("retro.ttf") format("truetype"),
+			url('retro.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: white;
+	font-family: "retro";
+	color: black;
+}
+
+/* header */
+.header {
+	color: black;
+	font-size: 100px;
+	font-weight: bold;
+}
+
+/* button for mouse */
+.cbtn {
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 80px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 500px;
+}
+.cbtn:hover {
+	background-color: gray;
+}
+.cbtn:active {
+	position: relative;
+	top: 1px;
+}
+.cbtn3 {
+	background-color: purple;
+}
+
+/* button for keyboard */
+.btn_normal {
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 80px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 500px;
+}
+.btn_active {
+	background-color: gray;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 80px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 500px;
+}
+
+/* image for mouse */
+.border_mouse {
+  border: 0px;
+}
+.border_mouse:hover {
+   border: 4px solid #000;
+}
+
+/* image for keyboard */
+.border_normal {
+  border: 0px;
+}
+.border_active {
+  border: 4px solid #000;
+}

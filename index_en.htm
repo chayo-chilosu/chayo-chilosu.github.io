@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- english languag -->
+<html lang="th">
+	<head>
+		<!-- show website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- website information -->
+		<meta name="description" content="Chayo Website" />
+		<meta name="author" content="chayopart kumkeaw" />
+		<meta name="keywords" content="chayo, chilosu" />
+		<!-- website scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- display picture in facebook -->
+		<meta property="og:image" content="images/logo.png" />
+	</head>
+	<body>
+		<center>
+			<div class="header">
+				<img border="0" src="images/logo.png" width="100" height="100" />
+				<br>
+				Chayo
+			</div>
+			<a id="0" href="chilosu_en.htm" target="_self" class="cbtn" onmouseover="document.getElementById(0).className = 'cbtn';">Chilosu</a>
+			<br />
+			<a id="1" href="article_en.htm" target="_self" class="cbtn" onmouseover="document.getElementById(1).className = 'cbtn';">Article</a>
+			<br />
+			<a id="2" href="about_en.htm" target="_self" class="cbtn" onmouseover="document.getElementById(2).className = 'cbtn';">About</a>
+			<br />
+			<a id="3" href="donate_en.htm" target="_self" class="cbtn" onmouseover="document.getElementById(3).className = 'cbtn';">Donate</a>
+			<br />
+			<br />
+			<!-- change language -->
+			<a href="index_th.htm" target="_self">
+				<img id="4" src="images/flag_th.png" alt="thai flag" title="ภาษาไทย" width="50" height="25" class="border_mouse" onmouseover="document.getElementById(4).className = 'border_mouse';" />
+			</a>
+			<br />
+			<br />
+			<!-- counter -->
+			<a href="https://www.freecounterstat.com" title="visitor counter">
+				<img src="https://counter4.stat.ovh/private/freecounterstat.php?c=2te88j9874ns4xtlbsl3gr7e6zmxn837" border="0" title="visitor counter" alt="visitor counter" width="200" height="50" />
+			</a>
+		</center>
+		<script>
+			var res=0;
+			var max=4;
+			document.onkeydown = function (e) {
+			switch (e.key) {
+				// up arrow key
+				case 'ArrowUp':
+					if(res > 0) {
+						res = res-1;
+					}
+					display_screen(res);
+					break;
+				// down arrow key
+				case 'ArrowDown':
+					if(res < max) {
+						res = res+1;
+					}
+					display_screen(res);
+					break;
+				// enter key
+				case 'Enter':
+					// chilosu
+					if(res == 0) {
+						window.location.replace("chilosu_en.htm");
+					}
+					// article
+					if(res == 1) {
+						window.location.replace("article_en.htm");
+					}
+					// about
+					if(res == 2) {
+						window.location.replace("about_en.htm");
+					}
+					// donate
+					if(res == 3) {
+						window.location.replace("donate_en.htm");
+					}
+					// change language
+					if(res == 4) {
+						window.location.replace("index_th.htm");
+					}
+					break;
+				}
+			};
+			function display_screen(res) {
+				console.log(res);
+				var i;
+				for (i=0; i<=max; i++) {
+					console.log(i);
+					if(i == res) {
+						if(res != max) {
+							document.getElementById(res).className = "btn_active";
+						}
+						if(res == max) {
+							document.getElementById(res).className = "border_active";
+						}
+					}
+					if(i != res) {
+						document.getElementById(i).className = "cbtn";
+						document.getElementById(max).className = "border_mouse";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

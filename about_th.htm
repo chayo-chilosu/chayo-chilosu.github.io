@@ -1,0 +1,144 @@
+<!doctype html>
+<!-- ภาษาไทย -->
+<html lang="th">
+	<head>
+		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
+		<title>ชโย</title>
+		<!-- ไอคอนของเว็บไซต์ -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- รูปแบบการเข้ารหัสอักษร -->
+		<meta charset="utf-8" />
+		<!-- รายละเอียดเว็บไซต์ -->
+		<meta name="description" content="เว็บไซต์ชโย" />
+		<meta name="author" content="ชโยภาส คำเขียว" />
+		<meta name="keywords" content="ชโย, ชิโรสุ" />
+		<!-- ขนาดเว็บไซต์ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- กำหนดให้บอตเข้ามาดูเว็บไซต์ได้ -->
+		<meta name="robots" content="index, follow" />
+		<!-- หน้าตาเว็บไซต์ -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- แสดงภาพในเฟสบุ๊ค -->
+		<meta property="og:image" content="images/logo.png" />
+	</head>
+	<body>
+		<center>
+			<div class="header">
+				<img border="0" src="images/logo.png" width="100" height="100" />
+				<br />
+				ชโย
+			</div>
+			<br />
+			<a id="0" href="https://www.chayo.org" target="_blank" class="cbtn" onmouseover="document.getElementById(0).className = 'cbtn';">Chayo Website</a>
+			<br />
+			<a id="1" href="https://chayo-chilosu.github.io" target="_blank" class="cbtn" onmouseover="document.getElementById(1).className = 'cbtn';">Chayo GitHub Website</a>
+			<br />
+			<a id="2" href="https://www.facebook.com/chilosu" target="_blank" class="cbtn" onmouseover="document.getElementById(2).className = 'cbtn';">Chayo Facebook Profile</a>
+			<br />
+			<a id="3" href="https://www.facebook.com/ChayoPage/" target="_blank" class="cbtn" onmouseover="document.getElementById(3).className = 'cbtn';">Chayo Facebook FanPage</a>
+			<br />
+			<a id="4" href="https://www.facebook.com/groups/ChayoGroup/" target="_blank" class="cbtn" onmouseover="document.getElementById(4).className = 'cbtn';">Facebook Group</a>
+			<br />
+			<a id="5" href="https://line.me/ti/g2/Axi2crTSGb9a7MF6vrdyrQ" target="_blank" class="cbtn" onmouseover="document.getElementById(5).className = 'cbtn';">Chayo Line Open Chat</a>
+			<br />
+			<a id="6" href="https://chayo-blog.blogspot.com" target="_blank" class="cbtn" onmouseover="document.getElementById(6).className = 'cbtn';">Chayo Google Blog</a>
+			<br />
+			<a id="7" href="https://www.youtube.com/channel/UClDEkEqQ_B0d5nsA-VnAwGg" target="_blank" class="cbtn" onmouseover="document.getElementById(7).className = 'cbtn';">Chayo YouTube Chanel</a>
+			<br />
+			<a id="8" href="https://twitter.com/Chayo41565945" target="_blank" class="cbtn" onmouseover="document.getElementById(8).className = 'cbtn';">Chayo Twitter</a>
+			<br />
+			<a id="9" href="https://www.instagram.com/chayochilosu/" target="_blank" class="cbtn" onmouseover="document.getElementById(9).className = 'cbtn';">Chayo Instagram</a>
+			<br />
+			<br />
+			<a id="10" href="index_th.htm" style="font-size: 70px;" class="border_mouse" onmouseover="document.getElementById(10).className = 'border_mouse';" /><b>ย้อนกลับ</b></a>
+		</center>
+		<script>
+			var res=0;
+			var max=11;
+			document.onkeydown = function (e) {
+			switch (e.key) {
+				// up arrow key
+				case 'ArrowUp':
+					if(res > 0) {
+						res = res-1;
+					}
+					display_screen(res);
+					break;
+				// down arrow key
+				case 'ArrowDown':
+					if(res < max) {
+						res = res+1;
+					}
+					display_screen(res);
+					break;
+				// enter key
+				case 'Enter':
+					// chayo website
+					if(res == 0) {
+						window.location.replace("https://www.chayo.org");
+					}
+					// github website
+					if(res == 1) {
+						window.location.replace("https://chayo-chilosu.github.io");
+					}
+					// facebook profile
+					if(res == 2) {
+						window.location.replace("https://www.facebook.com/chilosu");
+					}
+					// facebook fanpage
+					if(res == 3) {
+						window.location.replace("https://www.facebook.com/ChayoPage/");
+					}
+					// facebook group
+					if(res == 4) {
+						window.location.replace("https://www.facebook.com/groups/ChayoGroup/");
+					}
+					// line open chat
+					if(res == 5) {
+						window.location.replace("https://line.me/ti/g2/Axi2crTSGb9a7MF6vrdyrQ");
+					}
+					// blog
+					if(res == 6) {
+						window.location.replace("https://chayo-blog.blogspot.com");
+					}
+					// youtube chanel
+					if(res == 7) {
+						window.location.replace("https://www.youtube.com/channel/UClDEkEqQ_B0d5nsA-VnAwGg");
+					}
+					// twitter
+					if(res == 8) {
+						window.location.replace("https://twitter.com/Chayo41565945");
+					}
+					// instagram
+					if(res == 9) {
+						window.location.replace("https://www.instagram.com/chayochilosu/");
+					}
+					// back
+					if(res == 10) {
+						window.location.replace("index_th.htm");
+					}
+					break;
+				}
+			};
+			function display_screen(res) {
+				console.log(res);
+				var i;
+				for (i=0; i<=max; i++) {
+					console.log(i);
+					if(i == res) {
+						if(res != max) {
+							document.getElementById(res).className = "btn_active";
+						}
+						if(res == max) {
+							document.getElementById(res).className = "border_active";
+						}
+					}
+					if(i != res) {
+						document.getElementById(i).className = "cbtn";
+						document.getElementById(max).className = "border_mouse";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
