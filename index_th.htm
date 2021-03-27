@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- thai languag -->
+<!-- ภาษาไทย -->
 <html lang="th">
 	<head>
 		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
@@ -21,6 +21,7 @@
 		<!-- แสดงภาพในเฟสบุ๊ค -->
 		<meta property="og:image" content="images/logo.png" />
 	</head>
+	
 	<body>
 		<center>
 			<div class="header">
@@ -28,89 +29,23 @@
 				<br />
 				ชโย
 			</div>
-			<a id="0" href="chilosu_th.htm" target="_self" class="cbtn" onmouseover="document.getElementById(0).className = 'cbtn';">ชิโรสุ</a>
+			<a href="chilosu_th.htm" target="_self" class="cbtn">ชิโรสุ</a>
 			<br />
-			<a id="1" href="article_th.htm" target="_self" class="cbtn" onmouseover="document.getElementById(1).className = 'cbtn';">บทความ</a>
+			<a href="article_th.htm" target="_self" class="cbtn">บทความ</a>
 			<br />
-			<a id="2" href="about_th.htm" target="_self" class="cbtn" onmouseover="document.getElementById(2).className = 'cbtn';">เกี่ยวกับ</a>
-			<br />
-			<a id="3" href="donate_th.htm" target="_self" class="cbtn" onmouseover="document.getElementById(3).className = 'cbtn';">บริจาค</a>
+			<a href="about_th.htm" target="_self" class="cbtn">เกี่ยวกับ</a>
 			<br />
 			<br />
-			<!-- change language -->
+			<!-- เปลี่ยนเป็นภาษาอังกฤษ -->
 			<a href="index_en.htm" target="_self">
-				<img id="4" src="images/flag_en.png" alt="english flag" title="English Language" width="50" height="25" class="border_mouse" onmouseover="document.getElementById(4).className = 'border_mouse';" />
+				<img src="images/flag_en.png" title="Change to English Language" width="50" height="25" class="border_mouse" />
 			</a>
 			<br />
 			<br />
-			<!-- counter -->
+			<!-- ตัวนับสถิติการเข้าชมเว็บไซต์ -->
 			<a href="https://www.freecounterstat.com" title="visitor counter">
 				<img src="https://counter4.stat.ovh/private/freecounterstat.php?c=2te88j9874ns4xtlbsl3gr7e6zmxn837" border="0" title="visitor counter" alt="visitor counter" width="200" height="50" />
 			</a>
 		</center>
-		<script>
-			var res=0;
-			var max=4;
-			document.onkeydown = function (e) {
-			switch (e.key) {
-				// up arrow key
-				case 'ArrowUp':
-					if(res > 0) {
-						res = res-1;
-					}
-					display_screen(res);
-					break;
-				// down arrow key
-				case 'ArrowDown':
-					if(res < max) {
-						res = res+1;
-					}
-					display_screen(res);
-					break;
-				// enter key
-				case 'Enter':
-					// chilosu
-					if(res == 0) {
-						window.location.replace("chilosu_th.htm");
-					}
-					// article
-					if(res == 1) {
-						window.location.replace("article_th.htm");
-					}
-					// about
-					if(res == 2) {
-						window.location.replace("about_th.htm");
-					}
-					// donate
-					if(res == 3) {
-						window.location.replace("donate_th.htm");
-					}
-					// change language
-					if(res == 4) {
-						window.location.replace("index_en.htm");
-					}
-					break;
-				}
-			};
-			function display_screen(res) {
-				console.log(res);
-				var i;
-				for (i=0; i<=max; i++) {
-					console.log(i);
-					if(i == res) {
-						if(res != max) {
-							document.getElementById(res).className = "btn_active";
-						}
-						if(res == max) {
-							document.getElementById(res).className = "border_active";
-						}
-					}
-					if(i != res) {
-						document.getElementById(i).className = "cbtn";
-						document.getElementById(max).className = "border_mouse";
-					}
-				}
-			}
-		</script>
 	</body>
 </html>

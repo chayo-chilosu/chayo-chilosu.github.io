@@ -1,5 +1,7 @@
+/* character encoding */
 @charset "tis-620";
 
+/* font style */
 @font-face {
 	font-family: "retro";
     src: url("retro.eot");
@@ -12,6 +14,7 @@
     font-style: normal;
 }
 
+/* body style */
 body {
 	background-color: white;
 	font-family: "retro";
@@ -50,46 +53,10 @@ body {
 	background-color: purple;
 }
 
-/* button for keyboard */
-.btn_normal {
-	background-color: black;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 80px;
-	margin: 4px 2px;
-	cursor: pointer;
-	width: 500px;
-}
-.btn_active {
-	background-color: gray;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 80px;
-	margin: 4px 2px;
-	cursor: pointer;
-	width: 500px;
-}
-
-/* image for mouse */
+/* Mouse on Flag */
 .border_mouse {
   border: 0px;
 }
 .border_mouse:hover {
    border: 4px solid #000;
-}
-
-/* image for keyboard */
-.border_normal {
-  border: 0px;
-}
-.border_active {
-  border: 4px solid #000;
 }

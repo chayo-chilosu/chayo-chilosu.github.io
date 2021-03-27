@@ -1,30 +1,44 @@
-<html>
+<!doctype html>
+<!-- ภาษาไทย -->
+<html lang="th">
 	<head>
-		<!-- show website name in title bar -->
-		<title>Chayo</title>
-		<!-- website icon -->
+		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
+		<title>ชโย</title>
+		<!-- ไอคอนของเว็บไซต์ -->
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-		<!-- character encoding -->
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<!-- website information -->
-		<meta name="description" content="Chayo Website">
-		<meta name="author" content="chayopart kumkeaw">
-		<meta name="keywords" content="chayo, chilosu, ชโย, ชิโรสุ">
-		<!-- website scale -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- bot -->
-		<meta name="robots" content="index, follow">
+		<!-- รูปแบบการเข้ารหัสอักษร -->
+		<meta charset="utf-8" />
+		<!-- รายละเอียดเว็บไซต์ -->
+		<meta name="description" content="เว็บไซต์ชโย" />
+		<meta name="author" content="ชโยภาส คำเขียว" />
+		<meta name="keywords" content="ชโย, ชิโรสุ" />
+		<!-- ขนาดเว็บไซต์ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- กำหนดให้บอตเข้ามาดูเว็บไซต์ได้ -->
+		<meta name="robots" content="index, follow" />
+		<!-- หน้าตาเว็บไซต์ -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- แสดงภาพในเฟสบุ๊ค -->
+		<meta property="og:image" content="images/logo.png" />
 	</head>
+	
 	<body>
 		<center>
-		<h1>
-			<img border="0" src="images/logo.png" width="50" height="50">
-			<br>
-			Chayo
-		</h1>
-		<a href="index.htm"><b>กลับสู่หน้าหลัก</b></a>
-		<br>
-		<br>
-		<a href="chilosu.htm">ไฟฟ้า</a>
+			<div class="header">
+				<img border="0" src="images/logo.png" width="100" height="100" />
+				<br />
+				ชโย
+			</div>
+			<br />
+			<a href="computer_th.htm" target="_self" class="cbtn">คอมพิวเตอร์</a>
+			<br />
+			<a href="index_th.htm" target="_self" class="cbtn">&larr; ย้อนกลับ</a>
+			<br />
+			<br />
+			<!-- เปลี่ยนเป็นภาษาอังกฤษ -->
+			<a href="article_en.htm" target="_self">
+				<img src="images/flag_en.png" title="Change to English Language" width="50" height="25" class="border_mouse" />
+			</a>
+		</center>
 	</body>
 </html>
