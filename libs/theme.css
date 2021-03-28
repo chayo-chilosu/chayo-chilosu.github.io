@@ -23,7 +23,7 @@
 }
 
 /* ขนาดหน้าจอ 280 พิกเซล  */
-@media screen and (max-width: 280px) {
+@media only screen and (max-width: 280px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -74,7 +74,7 @@
 	}
 }
 /* ขนาดหน้าจอ 320 พิกเซล  */
-@media screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -125,7 +125,7 @@
 	}
 }
 /* ขนาดหน้าจอ 360 พิกเซล  */
-@media screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -176,7 +176,7 @@
 	}
 }
 /* ขนาดหน้าจอ 375 พิกเซล  */
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -227,7 +227,7 @@
 	}
 }
 /* ขนาดหน้าจอ 411 พิกเซล  */
-@media screen and (max-width: 411px) {
+@media only screen and (min-width: 411px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -278,7 +278,7 @@
 	}
 }
 /* ขนาดหน้าจอ 540 พิกเซล  */
-@media screen and (max-width: 540px) {
+@media only screen and (min-width: 540px) {
 	/* logo picture */
 	.pic_logo {
 		width: 100px;
@@ -329,7 +329,7 @@
 	}
 }
 /* ขนาดหน้าจอ 768 พิกเซล  */
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 	/* logo picture */
 	.pic_logo {
 		width: 120px;
@@ -380,7 +380,7 @@
 	}
 }
 /* ขนาดหน้าจอ 800 พิกเซล  */
-@media screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
 	/* logo picture */
 	.pic_logo {
 		width: 120px;
@@ -431,7 +431,7 @@
 	}
 }
 /* ขนาดหน้าจอ 1024 พิกเซล  */
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 	/* logo picture */
 	.pic_logo {
 		width: 120px;
@@ -483,7 +483,7 @@
 }
 
 /* ขนาดหน้าจอ 1920 พิกเซล  */
-@media screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
 	/* logo picture */
 	.pic_logo {
 		width: 120px;
