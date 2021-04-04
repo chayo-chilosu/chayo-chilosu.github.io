@@ -1,0 +1,154 @@
+<!-- เป็นเอกสารประเภท html -->
+<!doctype html>
+<!-- ภาษาไทย -->
+<html lang="th">
+	<head>
+		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
+		<title>ชโย</title>
+		<!-- ไอคอนของเว็บไซต์ -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- รูปแบบการเข้ารหัสอักษร -->
+		<meta charset="utf-8" />
+		<!-- รายละเอียดเว็บไซต์ -->
+		<meta name="description" content="เว็บไซต์ชโย" />
+		<meta name="author" content="ชโยภาส คำเขียว" />
+		<meta name="keywords" content="ชโย, ชิโรสุ" />
+		<!-- ขนาดเว็บไซต์ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- กำหนดให้บอตเข้ามาดูเว็บไซต์ได้ -->
+		<meta name="robots" content="index, follow" />
+		<!-- หน้าตาเว็บไซต์ -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- แสดงภาพในเฟสบุ๊ค -->
+		<meta property="og:image" content="images/logo.png" />
+	</head>
+	
+	<body>
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">ชโย</div>
+			<br />
+			<p>
+				<div class="article_title">วีไอ และวีไอเอ็ม (Vi and Vim)</div>
+				<div class="article_body">
+					<b>Vi คืออะไร</b>
+					<br />
+					Vi (Visual Editor) คือ Text Editor หรือเรียกสั้น ๆ ว่า Editor ใช้สำหรับ เพิ่ม ลบ แก้ไข อักษรในไฟล์ข้อมูลที่เป็นประเภท Text File
+					<br />
+					<br />
+					<b>โหมดการทำงานของโปรแกรมวีไอ</b>
+					<br />
+					- Command Mode คือ โหมดที่สามารถใช้คำสั่งได้
+					<br />
+					- Insert Mode คือ โหมดที่พิมพ์ข้อมูลตัวอักษรลงไป
+					<br />
+					<br />
+					<b>วิธีเรียกใช้งานโปรแกรม Vi ในระบบปฏิบัติการ Unix</b>
+					<br />
+					ให้พิมพ์คำสั่ง vi แล้วกดปุ่ม Enter
+					<b>วิธีเปิด Text File มาแก้ไข โดยใช้โปรแกรม Vi</b>
+					<br />
+					ให้พิมพ์คำสั่ง vi ตามด้วยชื่อไฟล์.นามสกุลไฟล์
+					<br />
+					ยกตัวอย่าง เช่น vi file_name.txt
+					<br />
+					<br />
+					<b>วิธีกู้คืนไฟล์ ขณะที่กำลังแก้ไขแล้วเกิดเหตุขัดข้อง</b>
+					<br />
+					ให้พิมพ์คำสั่ง vi -r ชื่อไฟล์.นามสกุลไฟล์
+					<br />
+					<br />
+					<b>Vim คืออะไร</b>
+					<br />
+					Vim (Vi Improved) คือ Text Editor ที่พัฒนาต่อมาจาก Vi ใช้สำหรับ เพิ่ม ลบ แก้ไข อักษรในไฟล์ข้อมูลที่เป็นประเภท Text File เหมือนกัน แต่จะเพิ่มความสามารถบางอย่างเข้าไป เช่น Syntax Highlight เป็นต้น
+					<br />
+					<br />
+					<b>โหมดการทำงานของโปรแกรม Vim</b>
+					<br />
+					Normal Mode หรือ Command Mode คือ โหมดที่สามารถใช้คำสั่งคีย์ลัดและพิมพ์คำสั่งได้
+					<br />
+					Insert Mode คือ โหมดที่เราสามารถพิมพ์ข้อความลงไปได้
+					<br />
+					Visual Mode คือ โหมดที่สามารถนำเมาส์ลากคลุมดำได้
+					<br />
+					<br />
+					<b>วิธีติดตั้ง Vim ในระบบปฏิบัติการ Linux</b>
+					<br />
+					ให้พิมพ์คำสั่ง sudo apt-get install vim ใน Terminal
+					<br />
+					<br />
+					<b>วิธีสร้างหรือเปิด Text File มาแก้ไข โดยใช้โปรแกรม Vi</b>
+					<br />
+					ให้พิมพ์ vim ชื่อไฟล์.นามสกุลไฟล์
+					<br />
+					ยกตัวอย่าง เช่น vim file_name.txt
+					<br />
+					<br />
+					<b>วิธีเข้าสู่ Insert Mode เพื่อแก้ไขหรือพิมพ์ข้อความ</b>
+					<br />
+					เมื่อเข้าสู่โปรแกรม Vim แล้ว ก็ให้กดปุ่ม insert หรือ i แล้วพิมพ์สิ่งที่ต้องการได้เลย
+					<br />
+					เราสามารถออกจาก Insert Mode เพื่อกลับสู่ Normal Mode ได้โดยการกดปุ่ม Esc ที่แป้นพิมพ์
+					<br />
+					<br />
+					<b>แสดงเลขบรรทัดในโปรแกรม Vim</b>
+					<br />
+					ให้ท่านอยู่ใน Normal Mode
+					<br />
+					ให้กดปุ่ม Esc ที่แป้นพิมพ์ :set number แล้วกดปุ่ม Enter ที่แป้นพิมพ์
+					<br />
+					<br />
+					<b>วิธีทำให้สามารถพิมพ์ภาษาไทยในโปรแกรม Vim ได้</b>
+					<br />
+					ให้ดาวน์โหลด VIM-THAI-KEYS จาก https://github.com/chakrit/vim-thai-keys
+					<br />
+					หากท่านใช้ Windows ให้นำไฟล์ vim-thai-keys.vim ใส่ไว้ใน C:\Program Files (x86)\Vim\vim80\keymap\vim-thai-keys.vim (หรือใส่ไว้ที่โฟลเดอร์ keymap ตำแหน่งที่ท่านได้ติดตั้งโปรแกรม Vim เอาไว้)
+					<br />
+					เข้าโปรแกรม Vim แล้วพิมพ์ :set keymap=vim-thai-keys แล้วกดปุ่ม Enter ที่แป้นพิมพ์
+					<br />
+					<br />
+					<b>วิธีกำหนด Character Encoding ให้กับ Vim</b>
+					<br />
+					ให้ท่านอยู่ใน Normal Mode ก่อน
+					<br />
+					- เปลี่ยนการแสดงผลบนหน้าจอเป็น UTF-8 ให้กดปุ่ม Esc ที่แป้นพิมพ์ พิมพ์ :set encoding=utf-8 แล้วกด enter
+					<br />
+					- เปลี่ยนไฟล์เป็นการเข้ารหัสแบบ UTF-8 ให้กดปุ่ม Esc ที่แป้นพิมพ์ พิมพ์ :set fileencoding=utf-8 แล้วกด enter
+					<br />
+					<br />
+					<b>การออกจากโปรแกรม</b>
+					<br />
+					การออกจากโปรแกรมท่านต้องอยู่ใน Normal Mode ก่อน หากท่านอยู่ใน Insert Mode หรือ Visual Mode ให้ท่านกด Esc กลับสู่ Normal Mode ก่อน
+					<br />
+					- การออกจากโปรแกรม ให้กดปุ่ม Esc ที่แป้นพิมพ์ แล้วพิมพ์ :q แล้วกดปุ่ม Enter ที่แป้นพิมพ์
+					<br />
+					- การออกจากโปรแกรมโดยไม่บันทึก ให้กดปุ่ม Esc ที่แป้นพิมพ์ แล้วพิมพ์ :q! แล้วกดปุ่ม Enter ที่แป้นพิมพ์
+					<br />
+					- การออกจากโปรแกรมและบันทึกข้อมูลด้วย ให้กดปุ่ม Esc ที่แป้นพิมพ์ แล้วพิมพ์ :wq แล้วกดปุ่ม Enter ที่แป้นพิมพ์
+					<br />
+					<br />
+					<b>เอกสารอ้างอิง</b>
+					<br />
+					<a href="http://oracle.jookku.com/2011/05/vi/" target="_blank">http://oracle.jookku.com/2011/05/vi/</a>
+					<br />
+					<a href="https://arnondora.in.th/basic-vim/" target="_blank">https://arnondora.in.th/basic-vim/</a>
+					<br />
+					<a href="https://blog.nextzy.me/%E0%B8%AB%E0%B8%B1%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%AB%E0%B8%B1%E0%B8%94-vim-plugin-%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0-basic-2ab792c7126" target="_blank">https://blog.nextzy.me/%E0%B8%AB%E0%B8%B1%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%AB%E0%B8%B1%E0%B8%94-vim-plugin-%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0-basic-2ab792c7126</a>
+					<br />
+					<a href="https://slashs10.wordpress.com/2015/12/18/7-habits-text-editing-vim/" target="_blank">https://slashs10.wordpress.com/2015/12/18/7-habits-text-editing-vim/</a>
+					<br />
+					<a href="https://www.youtube.com/watch?v=zQSsFRngrf4" target="_blank">https://www.youtube.com/watch?v=zQSsFRngrf4</a>
+					<br />
+					<a href="https://medium.com/vim-%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99-text-editor-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%97%E0%B8%B5%E0%B9%88/%E0%B9%81%E0%B8%99%E0%B8%B0%E0%B8%99%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89-vim-%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-a899cdf3478c" target="_blank">https://medium.com/vim-%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99-text-editor-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%97%E0%B8%B5%E0%B9%88/%E0%B9%81%E0%B8%99%E0%B8%B0%E0%B8%99%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89-vim-%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-a899cdf3478c</a>
+					<br />
+				</div>
+			</p>
+			<br />
+			<a href="article_th.htm" target="_self" class="cbtn">&lt; ย้อนกลับ</a>
+			<br />
+			<br />
+			<!-- เปลี่ยนเป็นภาษาอังกฤษ -->
+			<a href="computer_th.htm" target="_self" onclick="alert('ขออภัยบทความนี้ มีแค่ภาษาเดียว');"><img src="images/flag_en.png" title="Change to English Language" width="50" height="25" class="border_mouse" /></a>
+		</center>
+	</body>
+</html>
