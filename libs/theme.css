@@ -7,6 +7,17 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "ss";
+	src: url("ss.ttf");
+	font-display: swap;
+}
+
+.ss {
+	font-family: "ss";
+	font-size: 80px;
+}
+
 /* ขนาดหน้าจอ 280 พิกเซล  */
 @media only screen and (max-width: 280px) {
 	/* logo picture */
