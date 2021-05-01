@@ -57,7 +57,13 @@
 			  });
 			  function updateChargingInfo(){
 				// console.log("Battery charging time: " + battery.chargingTime + " seconds");
-				document.getElementById("battery_charg_time").innerHTML = "เวลาในการชาร์ตแบตเตอรี่ : " + battery.chargingTime + " นาที";
+				var charg_time = battery.chargingTime;
+				if(charg_time == "Infinity") {
+					document.getElementById("battery_charg_time").innerHTML = "เวลาในการชาร์ตแบตเตอรี่ : ไม่จำกัด";
+				}
+				else {
+					document.getElementById("battery_charg_time").innerHTML = "เวลาในการชาร์ตแบตเตอรี่ : " + battery.chargingTime + " นาที";
+				}
 			  }
 
 			  battery.addEventListener('dischargingtimechange', function(){
@@ -67,7 +73,7 @@
 				// console.log("Battery discharging time: " + battery.dischargingTime + " seconds");
 				var discharg_time = battery.dischargingTime;
 				if(discharg_time == "Infinity") {
-					document.getElementById("battery_discharg_time").innerHTML = "เวลาในการใช้งานแบตเตอรี่ : ใช้งานได้ไม่จำกัด";
+					document.getElementById("battery_discharg_time").innerHTML = "เวลาในการใช้งานแบตเตอรี่ : ไม่จำกัด";
 				}
 				else {
 					document.getElementById("battery_discharg_time").innerHTML = "เวลาในการใช้งานแบตเตอรี่ : " + battery.dischargingTime + " นาที";

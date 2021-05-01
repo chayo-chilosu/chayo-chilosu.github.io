@@ -57,7 +57,13 @@
 			  });
 			  function updateChargingInfo(){
 				// console.log("Battery charging time: " + battery.chargingTime + " seconds");
-				document.getElementById("battery_charg_time").innerHTML = "Battery Charging Time : " + battery.chargingTime + " Seconds";
+				var charg_time = battery.chargingTime;
+				if(charg_time == "Infinity") {
+					document.getElementById("battery_charg_time").innerHTML = "Battery Charging Time : Infinity";
+				}
+				else {
+					document.getElementById("battery_charg_time").innerHTML = "Battery Charging Time : " + battery.chargingTime + " Seconds";
+				}
 			  }
 
 			  battery.addEventListener('dischargingtimechange', function(){
