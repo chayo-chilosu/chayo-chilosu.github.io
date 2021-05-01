@@ -1,0 +1,104 @@
+<!-- document type html -->
+<!doctype html>
+<!-- english language -->
+<html lang="en">
+	<head>
+		<!-- show website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- website information -->
+		<meta name="description" content="Chayo website" />
+		<meta name="author" content="Chayopart Kumkeaw" />
+		<meta name="keywords" content="chayo, battery status" />
+		<!-- website scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- show website logo for facebook -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- google banner -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<script>
+			navigator.getBattery().then(function(battery) {
+			  function updateAllBatteryInfo(){
+				updateChargeInfo();
+				updateLevelInfo();
+				updateChargingInfo();
+				updateDischargingInfo();
+			  }
+			  updateAllBatteryInfo();
+
+			  battery.addEventListener('chargingchange', function(){
+				updateChargeInfo();
+			  });
+			  function updateChargeInfo(){
+				// console.log("Battery Charging : " + (battery.charging ? "Yes" : "No"));
+				document.getElementById("battery_charg").innerHTML = "Battery Charging : " + (battery.charging ? "Yes" : "No");
+			  }
+
+			  battery.addEventListener('levelchange', function(){
+				updateLevelInfo();
+			  });
+			  function updateLevelInfo(){
+				// console.log("Battery level: " + battery.level * 100 + "%");
+				document.getElementById("battery_level").innerHTML = "Battery Level : " + battery.level * 100 + "%";
+			  }
+
+			  battery.addEventListener('chargingtimechange', function(){
+				updateChargingInfo();
+			  });
+			  function updateChargingInfo(){
+				// console.log("Battery charging time: " + battery.chargingTime + " seconds");
+				document.getElementById("battery_charg_time").innerHTML = "Battery Charging Time : " + battery.chargingTime + " Seconds";
+			  }
+
+			  battery.addEventListener('dischargingtimechange', function(){
+				updateDischargingInfo();
+			  });
+			  function updateDischargingInfo(){
+				// console.log("Battery discharging time: " + battery.dischargingTime + " seconds");
+				var discharg_time = battery.dischargingTime;
+				if(discharg_time == "Infinity") {
+					document.getElementById("battery_discharg_time").innerHTML = "Battery Discharging Time : Infinity";
+				}
+				else {
+					document.getElementById("battery_discharg_time").innerHTML = "Battery Discharging Time : " + battery.dischargingTime + " Seconds";
+				}
+			  }
+
+			});
+		</script>
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">Chayo</div>
+			<p>
+				<div class="article_title">Battery Status</div>
+				<br />
+				<div class="normal_text">
+					<div id="battery_charg"></div>
+					<div id="battery_level"></div>
+					<div id="battery_charg_time"></div>
+					<div id="battery_discharg_time"></div>
+				</div>
+			</p>
+			<br />
+			<a href="webapp_en.htm" target="_self" class="cbtn">&lt; Back</a>
+			<br />
+			<br />
+			<!-- change language -->
+			<a href="battery_th.htm" target="_self"><img src="images/flag_th.png" title="เปลี่ยนเป็นภาษาไทย" width="50" height="25" class="border_mouse" /></a>
+			<br />
+			<br />
+			<!-- visitor counter -->
+			<script type='text/javascript' src='https://www.siamecohost.com/member/gcounter/graphcount.php?page=clock_en&style=49&maxdigits=8'></script>
+		</center>
+	</body>
+</html>

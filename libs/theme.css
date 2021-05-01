@@ -75,6 +75,9 @@ body {
 		font-size: 16px;
 		text-align: left;
 	}
+	.normal_text {
+		font-size: 16px;
+	}
 }
 /* ขนาดหน้าจอ 320 พิกเซล  */
 @media only screen and (min-width: 320px) {
@@ -125,6 +128,9 @@ body {
 	.article_body {
 		font-size: 16px;
 		text-align: left;
+	}
+	.normal_text {
+		font-size: 16px;
 	}
 }
 /* ขนาดหน้าจอ 360 พิกเซล  */
@@ -177,6 +183,9 @@ body {
 		font-size: 16px;
 		text-align: left;
 	}
+	.normal_text {
+		font-size: 16px;
+	}
 }
 /* ขนาดหน้าจอ 375 พิกเซล  */
 @media only screen and (min-width: 375px) {
@@ -227,6 +236,9 @@ body {
 	.article_body {
 		font-size: 16px;
 		text-align: left;
+	}
+	.normal_text {
+		font-size: 16px;
 	}
 }
 /* ขนาดหน้าจอ 411 พิกเซล  */
@@ -279,6 +291,9 @@ body {
 		font-size: 16px;
 		text-align: left;
 	}
+	.normal_text {
+		font-size: 16px;
+	}
 }
 /* ขนาดหน้าจอ 540 พิกเซล  */
 @media only screen and (min-width: 540px) {
@@ -329,6 +344,9 @@ body {
 	.article_body {
 		font-size: 16px;
 		text-align: left;
+	}
+	.normal_text {
+		font-size: 16px;
 	}
 }
 /* ขนาดหน้าจอ 768 พิกเซล  */
@@ -381,6 +399,9 @@ body {
 		font-size: 20px;
 		text-align: left;
 	}
+	.normal_text {
+		font-size: 20px;
+	}
 }
 /* ขนาดหน้าจอ 800 พิกเซล  */
 @media only screen and (min-width: 800px) {
@@ -431,6 +452,9 @@ body {
 	.article_body {
 		font-size: 20px;
 		text-align: left;
+	}
+	.normal_text {
+		font-size: 20px;
 	}
 }
 /* ขนาดหน้าจอ 1024 พิกเซล  */
@@ -483,6 +507,9 @@ body {
 		font-size: 20px;
 		text-align: left;
 	}
+	.normal_text {
+		font-size: 20px;
+	}
 }
 
 /* ขนาดหน้าจอ 1920 พิกเซล  */
@@ -534,6 +561,9 @@ body {
 	.article_body {
 		font-size: 20px;
 		text-align: left;
+	}
+	.normal_text {
+		font-size: 20px;
 	}
 }
 

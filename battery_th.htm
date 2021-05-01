@@ -1,0 +1,105 @@
+<!-- เป็นเอกสารประเภท html -->
+<!doctype html>
+<!-- ภาษาไทย -->
+<html lang="th">
+	<head>
+		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
+		<title>ชโย</title>
+		<!-- ไอคอนของเว็บไซต์ -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- รูปแบบการเข้ารหัสอักษร -->
+		<meta charset="utf-8" />
+		<!-- รายละเอียดเว็บไซต์ -->
+		<meta name="description" content="เว็บไซต์ชโย" />
+		<meta name="author" content="ชโยภาส คำเขียว" />
+		<meta name="keywords" content="ชโย, สถานะแบตเตอรี่, เช็คแบตเตอรี่, เช็คสถานะแบตเตอรี่" />
+		<!-- ขนาดเว็บไซต์ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- กำหนดให้บอตเข้ามาดูเว็บไซต์ได้ -->
+		<meta name="robots" content="index, follow" />
+		<!-- หน้าตาเว็บไซต์ -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- แสดงภาพในเฟสบุ๊ค -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- โฆษณาของกูเกิ้ล -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<script>
+			navigator.getBattery().then(function(battery) {
+			  function updateAllBatteryInfo(){
+				updateChargeInfo();
+				updateLevelInfo();
+				updateChargingInfo();
+				updateDischargingInfo();
+			  }
+			  updateAllBatteryInfo();
+
+			  battery.addEventListener('chargingchange', function(){
+				updateChargeInfo();
+			  });
+			  function updateChargeInfo(){
+				// console.log("Battery Charging : " + (battery.charging ? "Yes" : "No"));
+				document.getElementById("battery_charg").innerHTML = "แบตเตอรี่กำลังชาร์ต : " + (battery.charging ? "ใช่" : "ไม่ใช่");
+			  }
+
+			  battery.addEventListener('levelchange', function(){
+				updateLevelInfo();
+			  });
+			  function updateLevelInfo(){
+				// console.log("Battery level: " + battery.level * 100 + "%");
+				document.getElementById("battery_level").innerHTML = "ระดับพลังงานในแบตเตอรี่ : " + battery.level * 100 + "%";
+			  }
+
+			  battery.addEventListener('chargingtimechange', function(){
+				updateChargingInfo();
+			  });
+			  function updateChargingInfo(){
+				// console.log("Battery charging time: " + battery.chargingTime + " seconds");
+				document.getElementById("battery_charg_time").innerHTML = "เวลาในการชาร์ตแบตเตอรี่ : " + battery.chargingTime + " นาที";
+			  }
+
+			  battery.addEventListener('dischargingtimechange', function(){
+				updateDischargingInfo();
+			  });
+			  function updateDischargingInfo(){
+				// console.log("Battery discharging time: " + battery.dischargingTime + " seconds");
+				var discharg_time = battery.dischargingTime;
+				if(discharg_time == "Infinity") {
+					document.getElementById("battery_discharg_time").innerHTML = "เวลาในการใช้งานแบตเตอรี่ : ใช้งานได้ไม่จำกัด";
+				}
+				else {
+					document.getElementById("battery_discharg_time").innerHTML = "เวลาในการใช้งานแบตเตอรี่ : " + battery.dischargingTime + " นาที";
+				}
+			  }
+
+			});
+		</script>
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">ชโย</div>
+			<br />
+			<p>
+				<div class="article_title">สถานะแบตเตอรี่</div>
+				<br />
+				<div class="normal_text">
+					<div id="battery_charg"></div>
+					<div id="battery_level"></div>
+					<div id="battery_charg_time"></div>
+					<div id="battery_discharg_time"></div>
+				</div>
+			</p>
+			<br />
+			<a href="webapp_th.htm" target="_self" class="cbtn">&lt; ย้อนกลับ</a>
+			<br />
+			<br />
+			<!-- เปลี่ยนเป็นภาษาอังกฤษ -->
+			<a href="battery_en.htm" target="_self"><img src="images/flag_en.png" title="Change to English Language" width="50" height="25" class="border_mouse" /></a>
+			<br />
+			<br />
+			<!-- ตัวนับสถิติการเข้าชมเว็บไซต์ -->
+			<script type='text/javascript' src='https://www.siamecohost.com/member/gcounter/graphcount.php?page=clock_th&style=49&maxdigits=8'></script>
+		</center>
+	</body>
+</html>
