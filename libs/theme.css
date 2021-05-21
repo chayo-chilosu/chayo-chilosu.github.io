@@ -504,7 +504,7 @@ body {
 	.input_search {
 		width: 350px;
 		font-family: "rd";
-		font-size: 20px;
+		font-size: 30px;
 		border: 2px solid #000;
 	}
 	
@@ -518,7 +518,7 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -588,7 +588,7 @@ body {
 	.input_search {
 		width: 350px;
 		font-family: "rd";
-		font-size: 20px;
+		font-size: 40px;
 		border: 2px solid #000;
 	}
 	
@@ -602,7 +602,7 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 20px;
+		font-size: 40px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -672,7 +672,7 @@ body {
 	.input_search {
 		width: 350px;
 		font-family: "rd";
-		font-size: 20px;
+		font-size: 30px;
 		border: 2px solid #000;
 	}
 	
@@ -686,7 +686,7 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -756,7 +756,7 @@ body {
 	.input_search {
 		width: 350px;
 		font-family: "rd";
-		font-size: 20px;
+		font-size: 30px;
 		border: 2px solid #000;
 	}
 	
@@ -770,7 +770,7 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -782,7 +782,6 @@ body {
 		top: 1px;
 	}
 }
-
 /* ขนาดหน้าจอ 1920 พิกเซล  */
 @media only screen and (min-width: 1920px) {
 	/* logo picture */
@@ -839,9 +838,9 @@ body {
 	
 	/* search box */
 	.input_search {
-		width: 350px;
+		width: 400px;
 		font-family: "rd";
-		font-size: 20px;
+		font-size: 30px;
 		border: 2px solid #000;
 	}
 	
@@ -855,7 +854,7 @@ body {
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
