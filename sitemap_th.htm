@@ -1,0 +1,96 @@
+<!-- รูปแบบไฟล์เอกสารเป็นแบบ html -->
+<!doctype html>
+<!-- ภาษาไทย -->
+<html lang="th" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- แสดงชื่อเว็บไซต์ที่ไตเติ้ลบาร์ -->
+		<title>ชโย</title>
+		<!-- ไอคอนของเว็บไซต์ -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- รูปแบบการเข้ารหัสอักษร -->
+		<meta charset="utf-8" />
+		<!-- รายละเอียดเว็บไซต์ -->
+		<meta name="description" content="เว็บไซต์ชโย" />
+		<meta name="author" content="ชโยภาส คำเขียว" />
+		<meta name="keywords" content="ชโย, แผนผังเว็บไซต์" />
+		<!-- ขนาดเว็บไซต์ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- กำหนดให้บอตเข้ามาดูเว็บไซต์ได้ -->
+		<meta name="robots" content="index, follow" />
+		<!-- หน้าตาเว็บไซต์ -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- แสดงภาพในเฟสบุ๊ค -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- โฆษณาของกูเกิ้ล -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+		<!-- จาวาคริปต์ไลบรารีสำหรับระบบค้นหาในหน้าเว็บ -->
+		<script language="javascript" src="libs/jquery126.js"></script>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			$(function(){
+				$("#ifind").click(function(){    
+					if($("#keyword").val()!=""){
+						window.find($("#keyword").val());
+					}
+				});
+			});
+		</script>
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">ชโย</div>
+			<br />
+			<input class="input_search" id="keyword" name="keyword" type="text" value="" onkeypress="if(event.keyCode == 13){ window.find(this.value); }" />
+			<input class="sbtn" id="ifind" name="ifind" type="button" value="ค้นหา" />
+			<br />
+		</center>
+		<h2>เว็บไซต์ชโย</h2>
+		<dd>
+			<h3>หน้าหลัก</h3>
+			<ul>
+				<li><a href="https://www.chilosu.com/?lang=th" target="_self">ชิโรสุ</a></li>
+				<li><a href="webapp_th.htm" target="_self">เว็บแอป</a>
+					<ul>
+						<li><a href="clock_th.htm" target="_self">นาฬิกา</a></li>
+						<li><a href="battery_th.htm" target="_self">สถานะแบตเตอรี่</a></li>
+					</ul>
+				</li>
+				<li><a href="article_th.htm" target="_self">บทความ</a>
+					<ul>
+						<li><a href="computer_th.htm" target="_self">คอมพิวเตอร์</a></li>
+						<li><a href="vi_th.htm" target="_self">วีไอ และวีไอเอ็ม</a></li>
+					</ul>
+				</li>
+				<li><a href="sitemap_th.htm" target="_self">แผนผังเว็บไซต์</a></li>
+				<li><a href="about_th.htm" target="_self">เกี่ยวกับ</a>
+					<ul>
+						<li><a href="https://www.chayo.org" target="_blank">เว็บไซต์ชโย</a></li>
+						<li><a href="https://chayo-chilosu.github.io" target="_blank">เว็บไซต์ชโยในกิตฮับ</a></li>
+						<li><a href="https://www.facebook.com/chilosu" target="_blank">ชโยเฟสบุ๊ค</a></li>
+						<li><a href="https://www.facebook.com/ChayoPage/" target="_blank">เฟสบุ๊คแฟนเพจของชโย</a></li>
+						<li><a href="https://www.facebook.com/groups/ChayoGroup/" target="_blank">กลุ่มชโยในเฟสบุ๊ค</a></li>
+						<li><a href="https://line.me/ti/g2/Axi2crTSGb9a7MF6vrdyrQ" target="_blank">ไลน์โอเพนแชทของชโย</a></li>
+						<li><a href="https://chayo-blog.blogspot.com" target="_blank">กูเกิ้ลบล็อกของชโย</a></li>
+						<li><a href="https://www.youtube.com/channel/UClDEkEqQ_B0d5nsA-VnAwGg" target="_blank">ช่องยูทูปของชโย</a></li>
+						<li><a href="https://twitter.com/Chayo41565945" target="_blank">ทวิตเตอร์ของชโย</a></li>
+						<li><a href="https://www.instagram.com/chayochilosu/" target="_blank">อินสตาแกรมของชโย</a></li>
+						<li><a href="https://chayo.medium.com" target="_blank">มีเดียมของชโย</a></li>
+					</ul>
+				</li>
+			</ul>
+		</dd>
+		<center>
+			<br />
+			<a href="index_th.htm" target="_self" class="cbtn">&lt; ย้อนกลับ</a>
+			<br />
+			<br />
+			<!-- เปลี่ยนเป็นภาษาอังกฤษ -->
+			<a href="index_en.htm" target="_self"><img src="images/flag_en.png" title="Change to English Language" width="50" height="25" class="border_mouse" /></a>
+			<br />
+			<br />
+			<!-- ตัวนับสถิติการเข้าชมเว็บไซต์ -->
+			<script type='text/javascript' src='https://www.siamecohost.com/member/gcounter/graphcount.php?page=chayo&style=49&maxdigits=8'></script>
+		</center>
+	</body>
+</html>

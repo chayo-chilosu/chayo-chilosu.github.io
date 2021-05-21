@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<!-- show website name in title bar -->
+		<title>Chayo</title>
+		<!-- character encoding -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!-- website information -->
+		<meta name="description" content="Chayo Website">
+		<meta name="author" content="chayopart kumkeaw">
+		<meta name="keywords" content="chayo, ชโย, site map, แผนผังเว็บไซต์">
+		<!-- website scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script type="text/javascript">
+			var userLang = navigator.language || navigator.userLanguage; 
+			// thai language
+			if (userLang == "th-TH") {
+				window.location.href = "sitemap_th.htm";
+			}
+			// english language
+			else if(userLange == "en-US") {
+				window.location.href = "sitemap_en.htm";
+			}
+			// other language
+			else {
+				window.location.href = "sitemap_en.htm";
+			}
+			// alert ("The language is: " + userLang);
+		</script>
+	</body>
+</html>

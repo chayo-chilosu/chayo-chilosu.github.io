@@ -25,7 +25,8 @@ body {
 	font-size: 80px;
 }
 
-/* ขนาดหน้าจอ 280 พิกเซล  */
+/* Responsive UI */
+/* ขนาดหน้าจอ 280 พิกเซล  Galaxy Fold */
 @media only screen and (max-width: 280px) {
 	/* logo picture */
 	.pic_logo {
@@ -78,8 +79,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+	
+	/* search box */
+	.input_search {
+		width: 170px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 320 พิกเซล  */
+/* ขนาดหน้าจอ 320 พิกเซล  iPhone 5, iPhone SE */
 @media only screen and (min-width: 320px) {
 	/* logo picture */
 	.pic_logo {
@@ -132,8 +163,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+	
+	/* search box */
+	.input_search {
+		width: 170px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 360 พิกเซล  */
+/* ขนาดหน้าจอ 360 พิกเซล  Galaxy S5, Moto G4 */
 @media only screen and (min-width: 360px) {
 	/* logo picture */
 	.pic_logo {
@@ -186,8 +247,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+	
+	/* search box */
+	.input_search {
+		width: 200px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 375 พิกเซล  */
+/* ขนาดหน้าจอ 375 พิกเซล  iPhone 6, iPhone 7, iPhone 8 */
 @media only screen and (min-width: 375px) {
 	/* logo picture */
 	.pic_logo {
@@ -240,8 +331,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+
+	/* search box */
+	.input_search {
+		width: 220px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 411 พิกเซล  */
+/* ขนาดหน้าจอ 411 พิกเซล  Pixel 2 XL */
 @media only screen and (min-width: 411px) {
 	/* logo picture */
 	.pic_logo {
@@ -294,8 +415,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+
+	/* search box */
+	.input_search {
+		width: 250px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 540 พิกเซล  */
+/* ขนาดหน้าจอ 540 พิกเซล  Surface Duo */
 @media only screen and (min-width: 540px) {
 	/* logo picture */
 	.pic_logo {
@@ -348,8 +499,38 @@ body {
 	.normal_text {
 		font-size: 16px;
 	}
+
+	/* search box */
+	.input_search {
+		width: 350px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 768 พิกเซล  */
+/* ขนาดหน้าจอ 768 พิกเซล  iPad */
 @media only screen and (min-width: 768px) {
 	/* logo picture */
 	.pic_logo {
@@ -402,8 +583,38 @@ body {
 	.normal_text {
 		font-size: 20px;
 	}
+
+	/* search box */
+	.input_search {
+		width: 350px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 800 พิกเซล  */
+/* ขนาดหน้าจอ 800 พิกเซล  Old Desktop PC */
 @media only screen and (min-width: 800px) {
 	/* logo picture */
 	.pic_logo {
@@ -456,8 +667,38 @@ body {
 	.normal_text {
 		font-size: 20px;
 	}
+	
+	/* search box */
+	.input_search {
+		width: 350px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
+	}
 }
-/* ขนาดหน้าจอ 1024 พิกเซล  */
+/* ขนาดหน้าจอ 1024 พิกเซล  iPad Pro */
 @media only screen and (min-width: 1024px) {
 	/* logo picture */
 	.pic_logo {
@@ -509,6 +750,36 @@ body {
 	}
 	.normal_text {
 		font-size: 20px;
+	}
+	
+	/* search box */
+	.input_search {
+		width: 350px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
 	}
 }
 
@@ -564,6 +835,36 @@ body {
 	}
 	.normal_text {
 		font-size: 20px;
+	}
+	
+	/* search box */
+	.input_search {
+		width: 350px;
+		font-family: "rd";
+		font-size: 20px;
+		border: 2px solid #000;
+	}
+	
+	/* search button */
+	.sbtn {
+		font-family: "rd";
+		background-color: black;
+		border: none;
+		color: white;
+		/* padding: 15px 32px; */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbtn:hover {
+		background-color: gray;
+	}
+	.sbtn:active {
+		position: relative;
+		top: 1px;
 	}
 }
 

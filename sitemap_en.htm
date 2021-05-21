@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- english languag -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- show website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- website information -->
+		<meta name="description" content="Chayo Website" />
+		<meta name="author" content="Chayopart Kumkeaw" />
+		<meta name="keywords" content="chayo, site map" />
+		<!-- website scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- allow bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- display picture in facebook -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- google banner -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+		<!-- javascript library for search system in page -->
+		<script language="javascript" src="libs/jquery126.js"></script>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			$(function(){
+				$("#ifind").click(function(){    
+					if($("#keyword").val()!=""){
+						window.find($("#keyword").val());
+					}
+				});
+			});
+		</script>
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">Chayo</div>
+			<br />
+			<input class="input_search" id="keyword" name="keyword" type="text" value="" onkeypress="if(event.keyCode == 13){ window.find(this.value); }" />
+			<input class="sbtn" id="ifind" name="ifind" type="button" value="Search" />
+			<br />
+		</center>
+		<h2>Chayo Website</h2>
+		<dd>
+			<h3>Home Page</h3>
+			<ul>
+				<li><a href="https://www.chilosu.com/?lang=en" target="_self">Chilosu</a></li>
+				<li><a href="webapp_en.htm" target="_self">Web App</a>
+					<ul>
+						<li><a href="clock_en.htm" target="_self">Clock</a></li>
+						<li><a href="battery_en.htm" target="_self">Battery Status</a></li>
+					</ul>
+				</li>
+				<li><a href="article_en.htm" target="_self">Article</a>
+					<ul>
+						<li><a href="computer_th.htm" target="_self">Computer</a></li>
+						<li><a href="vi_th.htm" target="_self">Vi and Vim</a></li>
+					</ul>
+				</li>
+				<li><a href="sitemap_en.htm" target="_self">Site Map</a></li>
+				<li><a href="about_en.htm" target="_self">About</a>
+					<ul>
+						<li><a href="https://www.chayo.org" target="_blank">Chayo Website</a></li>
+						<li><a href="https://chayo-chilosu.github.io" target="_blank">Chayo GitHub Website</a></li>
+						<li><a href="https://www.facebook.com/chilosu" target="_blank">Chayo Facebook Profile</a></li>
+						<li><a href="https://www.facebook.com/ChayoPage/" target="_blank">Chayo Facebook FanPage</a></li>
+						<li><a href="https://www.facebook.com/groups/ChayoGroup/" target="_blank">Facebook Group</a></li>
+						<li><a href="https://line.me/ti/g2/Axi2crTSGb9a7MF6vrdyrQ" target="_blank">Chayo Line Open Chat</a></li>
+						<li><a href="https://chayo-blog.blogspot.com" target="_blank">Chayo Google Blog</a></li>
+						<li><a href="https://www.youtube.com/channel/UClDEkEqQ_B0d5nsA-VnAwGg" target="_blank">Chayo YouTube Chanel</a></li>
+						<li><a href="https://twitter.com/Chayo41565945" target="_blank">Chayo Twitter</a></li>
+						<li><a href="https://www.instagram.com/chayochilosu" target="_blank">Chayo Instagram</a></li>
+						<li><a href="https://chayo.medium.com" target="_blank">Chayo Medium</a></li>
+					</ul>
+				</li>
+			</ul>
+		</dd>
+		<br />
+		<br />
+		<center>
+			<br />
+			<a href="index_en.htm" target="_self" class="cbtn">&lt; Back</a>
+			<br />
+			<br />
+			<!-- change language -->
+			<a href="index_th.htm" target="_self"><img src="images/flag_th.png" title="เปลี่ยนเป็นภาษาไทย" width="50" height="25" class="border_mouse" /></a>
+			<br />
+			<br />
+			<!-- visitor counter -->
+			<script type='text/javascript' src='https://www.siamecohost.com/member/gcounter/graphcount.php?page=chayo&style=49&maxdigits=8'></script>
+		</center>
+	</body>
+</html>
