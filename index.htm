@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html  lang="en">
 	<head>
 		<!-- show website name in title bar -->
 		<title>Chayo</title>
@@ -12,23 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- bot -->
 		<meta name="robots" content="index, follow">
+		<!-- webbrowser language detection -->
+		<script type="text/javascript" src="libs/language_detect.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-			var userLang = navigator.language || navigator.userLanguage; 
-			// thai language
-			if (userLang == "th-TH") {
-				window.location.href = "index_th.htm";
-			}
-			// english language
-			else if(userLange == "en-US") {
-				window.location.href = "index_en.htm";
-			}
-			// other language
-			else {
-				window.location.href = "index_en.htm";
-			}
-			// alert ("The language is: " + userLang);
-		</script>
 	</body>
 </html>
