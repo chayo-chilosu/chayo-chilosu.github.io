@@ -1,0 +1,128 @@
+<!-- document type is html -->
+<!doctype html>
+<!-- english languag -->
+<html lang="en">
+	<head>
+		<!-- show website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- website information -->
+		<meta name="description" content="Chayo Website" />
+		<meta name="author" content="Chayopart Kumkeaw" />
+		<meta name="keywords" content="chayo, game" />
+		<!-- website scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- allow bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- display picture in facebook -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- google banner -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+	</head>
+	
+	<body onkeydown="key();">
+		<center>
+			<img class="pic_logo" src="images/logo.png" />
+			<div class="header">Chayo</div>
+			<div class="article_title">
+				<br />
+				<a id="1" href="all" onmouseover="s_menu(1);" onmouseout="n_menu(1);">Col Fate</a>
+				<br />
+				<a id="2" href="software" onmouseover="s_menu(2);" onmouseout="n_menu(2);">Col Same Smash</a>
+				<br />
+				<a id="3" href="index_en.htm" onmouseover="s_menu(3);" onmouseout="n_menu(3);">Back</a>
+			</div>
+			<script>
+				var i=1;
+				var min=1;
+				var max=3;
+				
+				function key() {
+					//key up
+					if(event.keyCode == 38) {
+						i--;
+						if(i < min) {
+							i=min;
+							s_menu(i);
+							clear_nav(i);
+						}
+						else if(i >= min) {
+							s_menu(i);
+							clear_nav(i);
+						}
+						else if(i > max) {
+							i=max;
+							s_menu(i);
+							clear_nav(i);
+						}
+					}
+					// key down
+					if(event.keyCode == 40) {
+						i++;
+						if(i < min) {
+							i=1;
+							s_menu(i);
+							clear_nav(i);
+						}
+						else if(i <= max) {
+							s_menu(i);
+							clear_nav(i);
+						}
+						else if(i > max) {
+							i=max;
+							s_menu(i);
+							clear_nav(i);
+						}
+					}
+					// key enter
+					if(event.keyCode == 13) {
+						if(i == 1) {
+							window.location.href = 'https://www.chayo.org/all';
+						}
+						else if(i == 2) {
+							window.location.href = 'https://www.chayo.org/software';
+						}
+						else if(i == 3) {
+							window.location.href = 'index_en.htm';
+						}
+					}
+				}
+				function s_menu(num) {
+					if(num == 1) {
+						document.getElementById("1").innerHTML = "> CHAYO ALL";
+					}
+					if(num == 2) {
+						document.getElementById("2").innerHTML = "> SOFTWARE";
+					}
+					if(num == 3) {
+						document.getElementById("3").innerHTML = "> Back";
+					}
+				}
+				function n_menu(num) {
+					if(num == 1) {
+						document.getElementById("1").innerHTML = "CHAYO ALL";
+					}
+					if(num == 2) {
+						document.getElementById("2").innerHTML = "SOFTWARE";
+					}
+					if(num == 3) {
+						document.getElementById("3").innerHTML = "Back";
+					}
+				}
+				function clear_nav(i) {
+					let n;
+					for(n = 1; n<= max; n++) {
+						if(n != i) {
+							n_menu(n);
+						}
+					}
+				}
+			</script>
+		</center>
+	</body>
+</html>
