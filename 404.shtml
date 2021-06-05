@@ -2,9 +2,16 @@
 <HTML>
 	<HEAD>
 		<TITLE>404 Not Found</TITLE>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<meta http-equiv="Refresh" content="4;url=index">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</HEAD>
 	<BODY>
 		<H1>Not Found</H1>
+		ERROR 404 : PAGE NOT FOUND
+		<BR>
+		<a href="index.htm" target="_self">GO TO HOME PAGE</a>
+		<BR>
 		The requested URL <!-- #echo var="REQUEST_URI" --> was not found on this server.
 		<HR>
 		<I><!-- #echo var="HTTP_HOST" --></I>

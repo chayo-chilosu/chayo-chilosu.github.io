@@ -1,0 +1,127 @@
+<!-- document type is HTML -->
+<!doctype html>
+<!-- language is english -->
+<html lang="en">
+    <head>
+        <!-- website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- webpage information -->
+		<meta name="description" content="Chayo Website" />
+		<meta name="author" content="Chayopart Kunkeaw" />
+		<meta name="keywords" content="chayo, cos, virtual os" />
+		<!-- set webpage scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- allow bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- display picture in facebook -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- google banner -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+		<!-- webpage style -->
+        <style>
+            body
+            {
+				background-color: black;
+				font-family: "rd";
+				color: white;
+				font-size: 30px;
+            }
+
+            .txt_input
+            {
+                border: none;
+                overflow: hidden;
+                outline: none;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 100%;
+				font-family: "rd";
+				font-size: 30px;
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="show_res"></div>
+        <table style="width: 100%;">
+            <tr>
+                <td valign="top">:</td><td style="width: 100%;"><textarea row="1" id="str_cmd" class="txt_input" onkeydown="chk_input();" autofocus></textarea></td>
+            </tr>
+        </table>
+        <script>
+            function chk_input()
+            {
+                var even = window.event || event.which;
+                if(event.keyCode == 13)
+                {
+                    event.preventDefault();
+                    add_line(document.getElementById("str_cmd").value);
+                    document.getElementById("str_cmd").value = "";
+                }
+            }
+
+            function add_line(line)
+            {
+                var x = line;
+				var sx = x.split(" ");
+				var nx = x.split(" ").length;
+				
+				if(nx === 1)
+				{
+					var cx = sx[0];
+					
+					if(cx === "help")
+					{
+						document.getElementById("show_res").innerHTML = "help - show all command line"+
+						"<br>"+
+						"clr - clear screen"+
+						"<br>"+
+						"cal [number][operator][number] - calculator operation with integer only"+
+						"<br>"+
+						"vr - os version"+
+						"<br>"+
+						"q - close program";
+					}
+					else if(cx === "clr")
+					{
+						document.getElementById("show_res").innerHTML = "";
+					}
+					else if(cx === "vr")
+					{
+						document.getElementById("show_res").innerHTML = "chayo c os 1";
+					}
+					else if(cx === "q")
+					{
+						window.close();
+					}
+					else
+					{
+						document.getElementById("show_res").innerHTML = x+" is not recognized a command";
+					}
+				}
+				else if(nx === 2)
+				{
+					var s0 = sx[0];
+					var s1 = sx[1];
+					if(s0 === "cal")
+					{
+						c = eval(s1);
+						document.getElementById("show_res").innerHTML = c;
+					}
+				}
+                else
+                {
+                    document.getElementById("show_res").innerHTML = x+" is not recognized a command";
+                }
+            }
+        </script>
+    </body>
+</html>

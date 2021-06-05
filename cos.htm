@@ -1,0 +1,121 @@
+<!-- document type is HTML -->
+<!doctype html>
+<!-- language is english -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- website name in title bar -->
+		<title>Chayo</title>
+		<!-- website icon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- character encoding -->
+		<meta charset="utf-8" />
+		<!-- webpage information -->
+		<meta name="description" content="Chayo Website" />
+		<meta name="author" content="Chayopart Kunkeaw" />
+		<meta name="keywords" content="chayo, cos, virtual os" />
+		<!-- set webpage scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- allow bot -->
+		<meta name="robots" content="index, follow" />
+		<!-- website style -->
+		<link rel="stylesheet" href="libs/theme.css" />
+		<!-- display picture in facebook -->
+		<meta property="og:image" content="images/logo.png" />
+		<!-- google banner -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7975511613902898" crossorigin="anonymous"></script>
+		<!-- webpage style -->
+		<style>
+			@font-face {
+				font-family: "rd";
+				src:url("libs/rd.ttf");
+				font-display: swap;
+			}
+			body {
+				background-color: black;
+				font-family: "rd";
+				color: white;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cheader">Chayo Virtual OS for Web Browser</div>
+		<br />
+		<div id="show">[ Use Arrow Key Up and Down to select Menu. Use Enter key to confirm ]</div>
+		<script>
+			var res=0;
+			var max=3;
+			document.onkeydown = function (e) {
+				switch (e.key) {
+					case 'ArrowUp':
+						// up arrow
+						if(res > 0) {
+							res = res-1;
+						}
+						display_screen(res);
+						console.log(res);
+						break;
+					case 'ArrowDown':
+						// down arrow
+						if(res < max) {
+							res = res+1;
+						}
+						display_screen(res);
+						console.log(res);
+						break;
+					//case 'ArrowLeft':
+						// left arrow
+						//break;
+					//case 'ArrowRight':
+						// right arrow
+						//break;
+					case 'Enter':
+						// enter key
+						display_screen(res);
+						if(res == 0) {
+							document.getElementById("show").innerHTML = "C OS Version 1";
+						}
+						if(res == 1) {
+							var today = new Date();
+							var h = today.getHours();
+							var m = today.getMinutes();
+							var s = today.getSeconds();
+							m = chk_time(m);
+							s = chk_time(s);
+							document.getElementById("show").innerHTML = "The current time is "+h+":"+m+":"+s;
+						}
+						if(res == 2) {
+							// window.location.replace("cli.htm");
+							myWindow = window.open("cli.htm", "_blank", "width=800, height=600");
+						}
+						if(res == 3) {
+							window.location.replace("index.htm");
+						}
+						console.log(res);
+						break;
+				}
+			};
+			function display_screen(res) {
+				console.log(res);
+				if(res == 0) {
+					document.getElementById("show").innerHTML = "[ Chilosu Version ]";
+				}
+				else if(res == 1) {
+					document.getElementById("show").innerHTML = "[ Time ]";
+				}
+				else if(res == 2) {
+					document.getElementById("show").innerHTML = "[ Command Line ]";
+				}
+				else if(res == 3) {
+					document.getElementById("show").innerHTML = "[ Exit ]";
+				}
+			}
+			function chk_time(i) {
+                if(i<10) {
+                    i="0"+i
+                };
+                return i;
+            }
+		</script>
+	</body>
+</html>
